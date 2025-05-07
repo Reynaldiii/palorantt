@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aeon - Palorant Agent</title>
+  <link rel="stylesheet" href="../CSS/agentDetail.css"/>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="../Assets/Images/Icon/logo.webp" alt="Logo" class="logo-img">
+        </div>
+        <button class="hamburger" aria-label="Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav class="nav-menu" id="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./agents.html" class="active">Agents</a></li>
+                <li><a href="./news.html">News</a></li>
+                <li><a href="./maps.html">Maps</a></li>
+                <li><a href="./report.html">Report Bug</a></li>
+        </nav>
+    </header>
+    
+    <main class="agent-detail">
+        <div class="agent-detail-header">
+            <h1 class="agent-detail-title">Agent Details</h1>
+        </div>
+          
+        <section class="agent-profile">
+            <div class="agent-image-container">
+                <img src="../Assets/Images/Agent/Aeon/Neon_Artwork_Full.webp" alt="Aeon" class="agent-full-img" />
+                <div class="agent-logo-role">
+                    <img src="../Assets/Images/Agent/Role/DuelistClassSymbol.webp" alt="Palorant Logo" class="agent-logo">
+                    <p class="role-title">Duelist</p>
+                    <p class="role-description">
+                        Duelist is a role designed to be the team's frontline attacker. They specialize in aggressive plays and are expected to secure the first kills and create space for the team. Duelists are fast, self-sufficient, and ideal for players who enjoy taking the lead in combat.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="agent-info">
+                <h1>Aeon</h1>
+                <p class="agent-description">
+                    A speedster from the Philippines, Aeon surges forward with lightning-fast movement and electric energy. She excels at breaking through enemy lines and catching opponents off guard.
+                </p>
+    
+                <h2>Abilities</h2>
+                <div class="agent-skills-container">
+                    <div class="skills-list">
+                        <div class="skill-item active" 
+                            data-skill-video="../Assets/Video/Aeon/fast_lane.webm"
+                            data-skill-title="Fast Lane"
+                            data-skill-type="Basic Ability"
+                            data-skill-desc="FIRE two energy lines forward on the ground that extend a short distance or until they hit a surface. The lines rise into walls of static electricity that block vision.">
+                            <img src="../Assets/Images/Agent/Aeon/Fast_Lane_Aeon.webp" alt="Fast Lane Icon" class="skill-icon">
+                            <div class="skill-info">
+                                <div class="skill-name">Fast Lane</div>
+                                <div class="skill-description">
+                                    Deploys two energy walls that block vision and damage enemies passing through.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item"
+                            data-skill-video="../Assets/Video/Aeon/relay_bolt.webm"
+                            data-skill-title="Relay Bolt"
+                            data-skill-type="Basic Ability"
+                            data-skill-desc="INSTANTLY throw an energy bolt that bounces once. Upon hitting each surface, the bolt electrifies the ground below with a Concussive blast.">
+                            <img src="../Assets/Images/Agent/Aeon/Relay_Bolt_Aeon.webp" alt="Relay Bolt Icon" class="skill-icon">
+                            <div class="skill-info">
+                                <div class="skill-name">Relay Bolt</div>
+                                <div class="skill-description">
+                                    Throws an energy bolt that bounces once and concusses anyone it hits.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item"
+                            data-skill-video="../Assets/Video/Aeon/high_gear.webm"
+                            data-skill-title="High Gear"
+                            data-skill-type="Signature Ability"
+                            data-skill-desc="INSTANTLY channel Aeon's power for Increased Speed. When charged, ALT FIRE to trigger an electric slide dash. Slide charge resets every two kills.">
+                            <img src="../Assets/Images/Agent/Aeon/High_Gear_Aeon.webp" alt="High Gear Icon" class="skill-icon">
+                            <div class="skill-info">
+                                <div class="skill-name">High Gear</div>
+                                <div class="skill-description">
+                                    Activates a burst of speed; slide once while charged.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item"
+                            data-skill-video="../Assets/Video/Aeon/overdrive.webm"
+                            data-skill-title="Overdrive"
+                            data-skill-type="Ultimate Ability"
+                            data-skill-desc="Unleash Neon's full power and speed for a short duration. FIRE to channel the power into a deadly lightning beam with high movement accuracy.">
+                            <img src="../Assets/Images/Agent/Aeon/Overdrive_Aeon.webp" alt="Ultimate Icon" class="skill-icon">
+                            <div class="skill-info">
+                                <div class="skill-name">Overdrive (Ultimate)</div>
+                                <div class="skill-description">
+                                    Unleashes a lightning beam that deals high damage with incredible accuracy at high speed.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="skill-preview-container">
+                        <div class="skill-preview-content">
+                            <div class="video-container">
+                                <video id="skillDisplay" autoplay muted loop class="skill-preview-video">
+                                    <source src="../Assets/Video/Aeon/fast_lane.webm" type="video/webm">
+                                </video>
+                            </div>
+                            <div class="skill-info-container">
+                                <h3 class="skill-preview-title">Fast Lane</h3>
+                                <span class="skill-preview-type">Basic Ability</span>
+                                <p class="skill-preview-details">
+                                    FIRE two energy lines forward on the ground that extend a short distance or until they hit a surface. The lines rise into walls of static electricity that block vision.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-simple">
+            <div class="footer-logo">
+                <img src="../Assets/Images/Icon/GiotGames.webp" alt="Giot Games Logo">
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="../Assets/Images/Icon/discord.webp" alt="Discord Icon"></a>
+                <a href="#"><img src="../Assets/Images/Icon/facebook.webp" alt="Facebook Icon"></a>
+                <a href="#"><img src="../Assets/Images/Icon/instagram.webp" alt="Instagram Icon"></a>
+                <a href="#"><img src="../Assets/Images/Icon/youtube.webp" alt="Youtube Icon"></a>
+                <a href="#"><img src="../Assets/Images/Icon/twitter.webp" alt="twitter Icon"></a>
+            </div>
+            <p class="copyright">&copy; 2025 Giot Games. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../JS/agentDetail.js"></script>
+</body>
+</html>

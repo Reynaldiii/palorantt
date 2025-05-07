@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps - Palorant</title>
+    <link rel="stylesheet" href="../CSS/maps.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="../Assets/Images/Icon/logo.webp" alt="Logo" class="logo-img">
+        </div>
+        <button class="hamburger" aria-label="Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav class="nav-menu" id="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./agents.html">Agents</a></li>
+                <li><a href="./maps.html" class="active">Maps</a></li>
+                <li><a href="./news.html">News</a></li>
+                <li><a href="./report.html">Report Bug</a></li>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Maps Hero Section -->
+        <section id="maps-hero" class="fade-in">
+            <div class="hero-content">
+                <h1>Palorant Maps</h1>
+                <p>Master the battlegrounds with strategic knowledge of each map's layout, callouts, and key features.</p>
+            </div>
+        </section>
+
+        <!-- Map Selection -->
+        <section id="map-selection" class="fade-in">
+            <div class="map-tabs">
+                <button class="map-tab active" data-map="ascent">Ascent</button>
+                <button class="map-tab" data-map="icebox">Icebox</button>
+                <button class="map-tab" data-map="haven">Haven</button>
+                <button class="map-tab" data-map="lotus">Lotus</button>
+                <button class="map-tab" data-map="pearl">Pearl</button>
+            </div>
+        </section>
+
+        <!-- Map Details Section -->
+        <section id="map-details">
+            <!-- Ascent Map -->
+            <div class="map-container active" id="ascent">
+                <div class="map-header">
+                    <h2>Ascent</h2>
+                    <div class="map-type">Standard Map</div>
+                </div>
+                
+                <div class="map-content">
+                    <div class="map-image">
+                        <img src="../Assets/Images/Maps/Loading_Screen_Ascent.webp" alt="Ascent Map">
+                        <div class="map-minimap">
+                            <img src="../Assets/Images/Maps/ascent.webp" alt="Ascent Minimap">
+                        </div>
+                    </div>
+                    
+                    <div class="map-info">
+                        <div class="map-description">
+                            <h3>Map Overview</h3>
+                            <p>Ascent is set in Venice, Italy, featuring open mid areas and tight choke points. The map's unique mechanic is the two mechanical doors that can be permanently destroyed.</p>
+                            <p>With its open mid area and multiple levels, Ascent rewards teams that can control space and use utility effectively to isolate engagements.</p>
+                        </div>
+                        
+                        <div class="map-features">
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li><strong>Two bomb sites (A and B)</strong> with distinct approaches</li>
+                                <li><strong>Mechanical doors</strong> that can be permanently destroyed</li>
+                                <li><strong>Vertical gameplay</strong> with multiple levels</li>
+                                <li><strong>Open mid area</strong> that's crucial for map control</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="map-strategies">
+                            <h3>Strategic Tips</h3>
+                            <div class="strategy-tips">
+                                <div class="tip">
+                                    <h4>For Attackers</h4>
+                                    <ul>
+                                        <li>Control mid to split the defense</li>
+                                        <li>Use utility to clear tight angles</li>
+                                        <li>Destroy doors to create new pathways</li>
+                                    </ul>
+                                </div>
+                                <div class="tip">
+                                    <h4>For Defenders</h4>
+                                    <ul>
+                                        <li>Hold mid control to limit attacker options</li>
+                                        <li>Use one-way smokes effectively</li>
+                                        <li>Play retake positions if needed</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Icebox Map -->
+            <div class="map-container" id="icebox">
+                <div class="map-header">
+                    <h2>Icebox</h2>
+                    <div class="map-type">Standard Map</div>
+                </div>
+                
+                <div class="map-content">
+                    <div class="map-image">
+                        <img src="../Assets/Images/Maps/Loading_Screen_Icebox.webp" alt="Icebox Map">
+                        <div class="map-minimap">
+                            <img src="../Assets/Images/Maps/icebox.webp" alt="Icebox Minimap">
+                        </div>
+                    </div>
+                    
+                    <div class="map-info">
+                        <div class="map-description">
+                            <h3>Map Overview</h3>
+                            <p>Set in a Russian Arctic outpost, Icebox features extensive verticality with ziplines and tight angles. The map emphasizes sharp aim and precise utility usage.</p>
+                            <p>With its complex verticality and multiple levels, Icebox challenges players to master both horizontal and vertical space control.</p>
+                        </div>
+                        
+                        <div class="map-features">
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li><strong>Extreme verticality</strong> with multiple levels</li>
+                                <li><strong>Ziplines</strong> for rapid rotation</li>
+                                <li><strong>Tight angles</strong> that reward precise aim</li>
+                                <li><strong>Narrow corridors</strong> that favor close-quarters combat</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="map-strategies">
+                            <h3>Strategic Tips</h3>
+                            <div class="strategy-tips">
+                                <div class="tip">
+                                    <h4>For Attackers</h4>
+                                    <ul>
+                                        <li>Use vertical space to surprise defenders</li>
+                                        <li>Control mid to access both sites</li>
+                                        <li>Clear angles methodically</li>
+                                    </ul>
+                                </div>
+                                <div class="tip">
+                                    <h4>For Defenders</h4>
+                                    <ul>
+                                        <li>Hold unconventional angles</li>
+                                        <li>Use utility to block ziplines</li>
+                                        <li>Play retake positions if needed</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Haven Map -->
+            <div class="map-container" id="haven">
+                <div class="map-header">
+                    <h2>Haven</h2>
+                    <div class="map-type">Standard Map</div>
+                </div>
+                
+                <div class="map-content">
+                    <div class="map-image">
+                        <img src="../Assets/Images/Maps/Loading_Screen_Haven.webp" alt="Haven Map">
+                        <div class="map-minimap">
+                            <img src="../Assets/Images/Maps/haven.webp" alt="Haven Minimap">
+                        </div>
+                    </div>
+                    
+                    <div class="map-info">
+                        <div class="map-description">
+                            <h3>Map Overview</h3>
+                            <p>Haven is set in a monastery in Bhutan and is unique for having three bomb sites (A, B, and C), forcing defenders to spread thin or make strategic decisions about which sites to prioritize.</p>
+                            <p>The map's three-site layout creates dynamic gameplay where rotations and map control are crucial for success.</p>
+                        </div>
+                        
+                        <div class="map-features">
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li><strong>Three bomb sites (A, B, and C)</strong> - unique in Palorant</li>
+                                <li><strong>Multiple pathways</strong> between sites</li>
+                                <li><strong>Central courtyard</strong> that's key for rotations</li>
+                                <li><strong>Garage area</strong> that's crucial for mid control</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="map-strategies">
+                            <h3>Strategic Tips</h3>
+                            <div class="strategy-tips">
+                                <div class="tip">
+                                    <h4>For Attackers</h4>
+                                    <ul>
+                                        <li>Split pushes to stretch defenders thin</li>
+                                        <li>Control garage for mid dominance</li>
+                                        <li>Fake attacks to confuse defenders</li>
+                                    </ul>
+                                </div>
+                                <div class="tip">
+                                    <h4>For Defenders</h4>
+                                    <ul>
+                                        <li>Adapt your setup based on attacker tendencies</li>
+                                        <li>Play for retakes on some sites</li>
+                                        <li>Use utility to slow down pushes</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Lotus Map -->
+            <div class="map-container" id="lotus">
+                <div class="map-header">
+                    <h2>Lotus</h2>
+                    <div class="map-type">Standard Map</div>
+                </div>
+                
+                <div class="map-content">
+                    <div class="map-image">
+                        <img src="../Assets/Images/Maps/Loading_Screen_Lotus.webp" alt="Lotus Map">
+                        <div class="map-minimap">
+                            <img src="../Assets/Images/Maps/lotus.webp" alt="Lotus Minimap">
+                        </div>
+                    </div>
+                    
+                    <div class="map-info">
+                        <div class="map-description">
+                            <h3>Map Overview</h3>
+                            <p>Set in India, Lotus features three sites with rotating doors that can change the flow of combat. The map rewards creative plays and adaptive strategies.</p>
+                            <p>With its rotating doors and multiple pathways, Lotus offers dynamic gameplay where control of the doors can dramatically shift round outcomes.</p>
+                        </div>
+                        
+                        <div class="map-features">
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li><strong>Rotating doors</strong> that change pathways</li>
+                                <li><strong>Three bomb sites</strong> with unique approaches</li>
+                                <li><strong>Breakable walls</strong> for new sightlines</li>
+                                <li><strong>Multiple levels</strong> for vertical play</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="map-strategies">
+                            <h3>Strategic Tips</h3>
+                            <div class="strategy-tips">
+                                <div class="tip">
+                                    <h4>For Attackers</h4>
+                                    <ul>
+                                        <li>Control door rotations to cut off defender rotations</li>
+                                        <li>Use breakable walls for unexpected angles</li>
+                                        <li>Fake attacks to draw defenders</li>
+                                    </ul>
+                                </div>
+                                <div class="tip">
+                                    <h4>For Defenders</h4>
+                                    <ul>
+                                        <li>Use doors to quickly rotate between sites</li>
+                                        <li>Hold unconventional angles</li>
+                                        <li>Play for retakes when appropriate</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pearl Map -->
+            <div class="map-container" id="pearl">
+                <div class="map-header">
+                    <h2>Pearl</h2>
+                    <div class="map-type">Standard Map</div>
+                </div>
+                
+                <div class="map-content">
+                    <div class="map-image">
+                        <img src="../Assets/Images/Maps/Loading_Screen_Pearl.webp" alt="Pearl Map">
+                        <div class="map-minimap">
+                            <img src="../Assets/Images/Maps/pearl.webp" alt="Pearl Minimap">
+                        </div>
+                    </div>
+                    
+                    <div class="map-info">
+                        <div class="map-description">
+                            <h3>Map Overview</h3>
+                            <p>Pearl is set in an underwater city in Portugal, featuring a classic two-site layout with long sightlines and tight chokepoints. The map emphasizes fundamentals and precise gunplay.</p>
+                            <p>With its mix of long sightlines and close-quarters areas, Pearl rewards teams that can adapt their playstyle to different areas of the map.</p>
+                        </div>
+                        
+                        <div class="map-features">
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li><strong>Underwater theme</strong> with unique visuals</li>
+                                <li><strong>Long sightlines</strong> for ranged engagements</li>
+                                <li><strong>Tight chokepoints</strong> that favor utility usage</li>
+                                <li><strong>Multiple pathways</strong> for flanking opportunities</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="map-strategies">
+                            <h3>Strategic Tips</h3>
+                            <div class="strategy-tips">
+                                <div class="tip">
+                                    <h4>For Attackers</h4>
+                                    <ul>
+                                        <li>Use utility to clear long angles</li>
+                                        <li>Control mid for rotation options</li>
+                                        <li>Split pushes to stretch defenses</li>
+                                    </ul>
+                                </div>
+                                <div class="tip">
+                                    <h4>For Defenders</h4>
+                                    <ul>
+                                        <li>Hold aggressive angles to deny space</li>
+                                        <li>Use utility to block chokepoints</li>
+                                        <li>Play for retakes when appropriate</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-simple">
+            <div class="footer-logo">
+                <img src="../Assets/Images/Icon/GiotGames.webp" alt="Giot Games Logo">
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="../Assets/Images/Icon/discord.webp" alt="Discord Icon"></a>
+                <a href="#"><img src="../Assets/Images/Icon/facebook.webp" alt="Facebook Icon"></a>
+                <a href="#"><img src="../Assets/Images/Icon/instagram.webp" alt="Instagram Icon"></a>
+                <a href="#"><img src="../Assets/Images/Icon/youtube.webp" alt="Youtube Icon"></a>
+                <a href="#"><img src="../Assets/Images/Icon/twitter.webp" alt="twitter Icon"></a>
+            </div>
+            <p class="copyright">&copy; 2025 Giot Games. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="../JS/maps.js"></script>
+</body>
+</html>

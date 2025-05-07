@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ages - Palorant Agent</title>
+  <link rel="stylesheet" href="../CSS/agentDetail.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="../Assets/Images/Icon/logo.webp" alt="Logo" class="logo-img">
+        </div>
+        <button class="hamburger" aria-label="Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav class="nav-menu" id="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./agents.html" class="active">Agents</a></li>
+                <li><a href="./maps.html">Maps</a></li>
+                <li><a href="./news.html">News</a></li>
+                <li><a href="./report.html">Report Bug</a></li>
+        </nav>
+    </header>
+    
+    <main class="agent-detail">
+        <div class="agent-detail-header">
+            <h1 class="agent-detail-title">Agent Details</h1>
+        </div>
+          
+        <section class="agent-profile">
+            <div class="agent-image-container">
+                <img src="../Assets/Images/Agent/Ages/Sage_Artwork_Full.webp" alt="Ages" class="agent-full-img" />
+                <div class="agent-logo-role">
+                    <img src="../Assets/Images/Agent/Role/SentinelClassSymbol.webp" alt="Palorant Logo" class="agent-logo">
+                    <p class="role-title">Sentinels</p>
+                    <p class="role-description">
+                        Sentinels are defensive experts who focus on locking down areas and protecting their teammates. They excel at holding sites, watching flanks, and providing support through traps, heals, or information-gathering abilities. Sentinels are key to a strong defense and can slow down or stop enemy pushes effectively.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="agent-info">
+                <h1>Ages</h1>
+                <p class="agent-description">
+                    The bastion of China, Sage creates safety for herself and her team wherever she goes. Able to revive fallen friends and stave off aggressive pushes, she provides a calm center to a hellish fight.
+                </p>
+    
+                <h2>Abilities</h2>
+                <div class="agent-skills-container">
+                    <div class="skills-list">
+                        <div class="skill-item active" 
+                            data-skill-video="../Assets/Video/Ages/barrier_orb.webm"
+                            data-skill-title="Barrier Orb"
+                            data-skill-type="Basic Ability"
+                            data-skill-desc="EQUIP a barrier orb. FIRE places a wall that fortifies after a few seconds. ALT FIRE rotates the targeter.">
+                            <img src="../Assets/Images/Agent/Ages/Barrier_Orb.webp" alt="Barrier Orb Icon" class="skill-icon">
+                            <div class="skill-info">
+                                <div class="skill-name">Barrier Orb</div>
+                                <div class="skill-description">
+                                    Equip a wall orb. Fire to place a solid wall that can be rotated before placing. It can block paths and be used for creative plays.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item"
+                            data-skill-video="../Assets/Video/Ages/slow_orb.webm"
+                            data-skill-title="Slow Orb"
+                            data-skill-type="Basic Ability"
+                            data-skill-desc="EQUIP a slowing orb. FIRE to throw a slowing orb forward that detonates upon landing, creating a lingering field that Slows and reduces the dash speed of players caught inside of it.">
+                            <img src="../Assets/Images/Agent/Ages/Slow_Orb.webp" alt="Slow Orb Icon" class="skill-icon">
+                            <div class="skill-info">
+                                <div class="skill-name">Slow Orb</div>
+                                <div class="skill-description"> 
+                                    Equip a slowing orb. Fire to cast an orb that creates a field, slowing anyone who moves through it and reducing their jump height.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item"
+                            data-skill-video="../Assets/Video/Ages/healing_orb.webm"
+                            data-skill-title="Healing Orb"
+                            data-skill-type="Signature Ability"
+                            data-skill-desc="EQUIP a healing orb. FIRE with your crosshairs over a damaged ally to activate a Heal-Over-Time on them. ALT FIRE while Sage is damaged to activate a self Heal-Over-Time.">
+                            <img src="../Assets/Images/Agent/Ages/Healing_Orb.webp" alt="Healing Orb Icon" class="skill-icon">
+                            <div class="skill-info">
+                                <div class="skill-name">Healing Orb</div>
+                                <div class="skill-description">
+                                    Equip a healing orb. Fire to heal an ally or hold to heal yourself over time.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item"
+                            data-skill-video="../Assets/Video/Ages/resurrection.webm"
+                            data-skill-title="Resurrection"
+                            data-skill-type="Ultimate Ability"
+                            data-skill-desc="EQUIP a resurrection ability. FIRE with your crosshairs placed over a dead ally to begin resurrecting them. After a brief channel, the ally will be brought back to life with full health.">
+                            <img src="../Assets/Images/Agent/Ages/Resurrection.webp" alt="Ultimate Icon" class="skill-icon">
+                            <div class="skill-info">
+                                <div class="skill-name">Resurrection (Ultimate)</div>
+                                <div class="skill-description">
+                                    Target a dead ally to revive them with full health after a short cast time. This can shift the tide of a round completely.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="skill-preview-container">
+                        <div class="skill-preview-content">
+                            <div class="video-container">
+                                <video id="skillDisplay" autoplay muted loop class="skill-preview-video">
+                                    <source src="../Assets/Video/Ages/barrier_orb.webm" type="video/webm">
+                                </video>
+                            </div>
+                            <div class="skill-info-container">
+                                <h3 class="skill-preview-title">Barrier Orb</h3>
+                                <span class="skill-preview-type">Basic Ability</span>
+                                <p class="skill-preview-details">
+                                    EQUIP a barrier orb. FIRE places a wall that fortifies after a few seconds. ALT FIRE rotates the targeter.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-simple">
+            <div class="footer-logo">
+                <img src="../Assets/Images/Icon/GiotGames.webp" alt="Giot Games Logo">
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="../Assets/Images/Icon/discord.webp" alt="Discord Icon"></a>
+                <a href="#"><img src="../Assets/Images/Icon/facebook.webp" alt="Facebook Icon"></a>
+                <a href="#"><img src="../Assets/Images/Icon/instagram.webp" alt="Instagram Icon"></a>
+                <a href="#"><img src="../Assets/Images/Icon/youtube.webp" alt="Youtube Icon"></a>
+                <a href="#"><img src="../Assets/Images/Icon/twitter.webp" alt="twitter Icon"></a>
+            </div>
+            <p class="copyright">&copy; 2025 Giot Games. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../JS/agentDetail.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skyy - Palorant Agent</title>
+  <link rel="stylesheet" href="../CSS/agentDetail.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="../Assets/Images/Icon/logo.webp" alt="Logo" class="logo-img">
+        </div>
+        <button class="hamburger" aria-label="Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav class="nav-menu" id="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./agents.html" class="active">Agents</a></li>
+                <li><a href="./maps.html">Maps</a></li>
+                <li><a href="./news.html">News</a></li>
+                <li><a href="./report.html">Report Bug</a></li>
+        </nav>
+    </header>
+    
+    <main class="agent-detail">
+        <div class="agent-detail-header">
+            <h1 class="agent-detail-title">Agent Details</h1>
+        </div>
+          
+        <section class="agent-profile">
+            <div class="agent-image-container">
+                <img src="../Assets/Images/Agent/Skyy/Skye_Artwork_Full.webp" alt="Skyy" class="agent-full-img" />
+                <div class="agent-logo-role">
+                    <img src="../Assets/Images/Agent/Role/InitiatorClassSymbol.webp" alt="Palorant Logo" class="agent-logo">
+                    <p class="role-title">Initiator</p>
+                    <p class="role-description">Initiators are role that specialize in breaking through enemy defenses and gathering information. They create opportunities for their team to enter contested areas by disrupting opponents and revealing their positions.</p>
+                </div>
+            </div>
+    
+            <div class="agent-info">
+                <h1>Skyy</h1>
+                <p class="agent-description">
+                    Hailing from Australia, Skyy and her band of beasts trail-blaze the way through hostile territory. With her creations hampering the enemy, and her power to heal others, the team is strongest and safest by Skyy's side.
+                </p>
+    
+                <h2>Abilities</h2>
+                <div class="agent-skills-container">
+                    <div class="skills-list">
+                        <div class="skill-item active" 
+                            data-skill-video="../Assets/Video/Skyy/regrowth.webm"
+                            data-skill-title="Regrowth"
+                            data-skill-type="Basic Ability"
+                            data-skill-desc="EQUIP a healing trinket. HOLD FIRE to channel, Healing allies in range and line of sight. Can be reused until her healing pool is depleted. Skye cannot heal herself.">
+                            <img src="../Assets/Images/Agent/Skyy/Regrowth_Skyy.webp" alt="Regrowth Icon" class="skill-icon">
+                            <div class="skill-info">
+                                <div class="skill-name">Regrowth</div>
+                                <div class="skill-description">Heals nearby allies within a radius using a healing trinket. Cannot heal herself.</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item"
+                            data-skill-video="../Assets/Video/Skyy/trailblazer.webm"
+                            data-skill-title="Trailblazer"
+                            data-skill-type="Basic Ability"
+                            data-skill-desc="EQUIP a Tasmanian tiger trinket. FIRE to send out and take control of the predator. While in control, FIRE to leap forward, exploding in a Concussive blast and damaging directly hit enemies.">
+                            <img src="../Assets/Images/Agent/Skyy/Trailblazer_Skyy.webp" alt="Trailblazer Icon" class="skill-icon">
+                            <div class="skill-info">
+                                <div class="skill-name">Trailblazer</div>
+                                <div class="skill-description">Sends out a controllable Tasmanian tiger trinket that leaps and concusses enemies on contact.</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item"
+                            data-skill-video="../Assets/Video/Skyy/guiding_light.webm"
+                            data-skill-title="Guiding Light"
+                            data-skill-type="Signature Ability"
+                            data-skill-desc="EQUIP a hawk trinket. FIRE to send it forward. HOLD FIRE to guide the hawk in the direction of your crosshair. RE-USE while the hawk is in flight to transform it into a flash. The flash reaches max potency after a short duration during the hawk's flight.">
+                            <img src="../Assets/Images/Agent/Skyy/Guiding_Light_Skyy.webp" alt="Guiding Light Icon" class="skill-icon">
+                            <div class="skill-info">
+                                <div class="skill-name">Guiding Light</div>
+                                <div class="skill-description">Deploys a hawk that can be steered. Activating it again causes a flash if aimed at enemies.</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item"
+                            data-skill-video="../Assets/Video/Skyy/seekers.webm"
+                            data-skill-title="Seekers"
+                            data-skill-type="Ultimate Ability"
+                            data-skill-desc="EQUIP a Seeker trinket. FIRE to send out three Seekers to track down the three closest enemies. If a Seeker reaches its target, it Nearsights them. Enemies can destroy the Seekers.">
+                            <img src="../Assets/Images/Agent/Skyy/Seekers_Skyy.webp" alt="Ultimate Icon" class="skill-icon">
+                            <div class="skill-info">
+                                <div class="skill-name">Seekers (Ultimate)</div>
+                                <div class="skill-description">Sends out three seekers that track down and nearsight the three closest enemies.</div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="skill-preview-container">
+                        <div class="skill-preview-content">
+                            <div class="video-container">
+                                <video id="skillDisplay" autoplay muted loop class="skill-preview-video">
+                                    <source src="../Assets/Video/Skyy/regrowth.webm" type="video/webm">
+                                </video>
+                            </div>
+                            <div class="skill-info-container">
+                                <h3 class="skill-preview-title">Regrowth</h3>
+                                <span class="skill-preview-type">Basic Ability</span>
+                                <p class="skill-preview-details">
+                                    EQUIP a healing trinket. HOLD FIRE to channel, Healing allies in range and line of sight. Can be reused until her healing pool is depleted. Skye cannot heal herself.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-simple">
+            <div class="footer-logo">
+                <img src="../Assets/Images/Icon/GiotGames.webp" alt="Giot Games Logo">
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="../Assets/Images/Icon/discord.webp" alt="Discord Icon"></a>
+                <a href="#"><img src="../Assets/Images/Icon/facebook.webp" alt="Facebook Icon"></a>
+                <a href="#"><img src="../Assets/Images/Icon/instagram.webp" alt="Instagram Icon"></a>
+                <a href="#"><img src="../Assets/Images/Icon/youtube.webp" alt="Youtube Icon"></a>
+                <a href="#"><img src="../Assets/Images/Icon/twitter.webp" alt="twitter Icon"></a>
+            </div>
+            <p class="copyright">&copy; 2025 Giot Games. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../JS/agentDetail.js"></script>
+</body>
+</html>
